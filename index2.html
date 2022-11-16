@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Map Service Lands</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--begin::Fonts(mandatory for all pages)-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt&display=swap" />
+  <!--end::Fonts-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+  <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+  <!--begin::Vendor Stylesheets(used for this page only)-->
+  <link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+  <!-- <link href="assets/plugins/custom/leaflet/leaflet.bundle.css" rel="stylesheet" type="text/css" /> -->
+  <link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+  <!--end::Vendor Stylesheets-->
+  <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+  <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+  <!--end::Global Stylesheets Bundle-->
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
+    /* @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap'); */
+
+    body {
+      font-family: 'Prompt', sans-serif;
+      color: rgba(0, 0, 0, 0.8);
+      font-weight: 400;
+      line-height: 1.58;
+      /* letter-spacing: .01em; */
+      /* font-size: 20px; */
+      /* แสดงความกว้าง เต็มหน้าจอแผนที่ */
+    }
+
+    /* .leaflet-container {
+            font-family: 'Prompt', sans-serif;
+            height: 100vh;
+            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            z-index: 0;
+            margin: 1;
+        } */
+
+    #map {
+      font-family: 'Prompt', sans-serif;
+      height: 100vh;
+      width: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      z-index: 0;
+
+    }
+
+    .id-omnibox {
+      margin: 8px 0 8px 8px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+    }
+
+    .xUNLkc {
+      /* pointer-events: auto; */
+      position: absolute;
+      right: 0px;
+      bottom: 0;
+      margin: 0px 8px 30px 0px;
+      /* white-space: nowrap; */
+      z-index: 2;
+      max-height: 30px;
+      /* -webkit-transform: translateZ(0); */
+      /* transform: translateZ(0); */
+    }
+  </style>
+
+</head>
+<div id="map"></div>
+
+<div class="xUNLkc">
+  <button type="button" class="btn btn-outline-primary btn-sm">Primary</button>
+  <button type="button" class="btn btn-primary btn-sm">
+    งานออก <span class="badge bg-danger">1</span>
+  </button>
+</div>
+
+<script src="./customs.js"></script>
+
+</html>
