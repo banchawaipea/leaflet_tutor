@@ -153,6 +153,9 @@ port 8080 of the Docker (or whatever port was exposed in the Dockerfile):
 docker run -d -p 8000:8080 --restart=always --cap-add=SYS_ADMIN --name=dillinger <youruser>/dillinger:${package.json.version}
 ```
 
+```python
+from . import models
+```
 > Note: `--capt-add=SYS-ADMIN` is required for PDF rendering.
 
 Verify the deployment by navigating to your server address in
