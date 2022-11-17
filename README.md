@@ -1,1 +1,4 @@
-# การใช้งาน Leaflet เพื่องานแผนที่
+# การใช้งาน Leaflet 
+
+## ติดตั้ง Leaflet JS
+Import ไฟล์ JS 
