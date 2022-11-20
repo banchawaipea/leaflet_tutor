@@ -66,8 +66,8 @@ $(document).ready(function () {
   // lat = 13, long = 100 zoom ครั้งแรกที่เรียกหน้าเว็บ
   const map = L.map("map", {
 
-    zoomDelta: 0.25, // ความละเอียดการ zoom
-    zoomSnap: 0, // ความละเอียดการ zoom
+    // zoomDelta: 0.25, // ความละเอียดการ zoom
+    // zoomSnap: 0, // ความละเอียดการ zoom
     // remove Zoom Control
     zoomControl: true,
     // layer
@@ -179,10 +179,17 @@ $(document).ready(function () {
   // Init Leaflet-Geoman
   map.pm.addControls({ position: "topleft" });
 
+  // draw start leaflet geoman
   map.on("pm:drawstart", (e) => {
     console.log(e);
-
+    console.log(e.target);
   });
+
+  // draw end leaflet geoman
+  map.on("pm:drawend", (e) => {
+    console.log(e);
+  });
+  
 
   // leaflet-geoman layers control
   var drawnItems = new L.FeatureGroup();
